@@ -51,14 +51,10 @@ app.use("/api/payment",paymentRouter)
 // database connection
 mongoose
   .connect(
-    "mongodb+srv://sjsaurabh082:SYuN5CELB1zsZ0Ap@cluster0.y4jzl.mongodb.net/MERN_E_Commerce?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    "mongodb+srv://sjsaurabh082:SYuN5CELB1zsZ0Ap@cluster0.y4jzl.mongodb.net/MERN_E_Commerce?retryWrites=true&w=majority"
   )
   .then(() => {
-    console.log("database connected successfully");
+    console.log("Database connected successfully");
   })
   .catch((err) => {
     console.log(err);
