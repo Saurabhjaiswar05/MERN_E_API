@@ -51,7 +51,7 @@ app.use("/api/payment",paymentRouter)
 // database connection
 mongoose
   .connect(
-    process.env.MONGODB_URL,
+    "mongodb+srv://sjsaurabh082:SYuN5CELB1zsZ0Ap@cluster0.y4jzl.mongodb.net/MERN_E_Commerce?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
